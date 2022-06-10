@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 #Take the environment variables from .env file
 
-environ.Env.read_env(os.path.join(BASE_DIR,'django_celery/configuration/prod.env'))
+environ.Env.read_env(os.path.join(BASE_DIR,'.env'))
 DEBUG = env('DEBUG')
 
 # Quick-start development settings - unsuitable for production
